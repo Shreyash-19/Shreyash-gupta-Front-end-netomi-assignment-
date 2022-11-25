@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+  <title>
+    Form iframe
+  </title>
+  <script src="./validation_inputs.js"></script>
+  <script src="./fetch_country_states.js"></script>
+  <link href="./style.css" rel="stylesheet">
+  </link>
+</head>
+
+<body>
+  <form onsubmit="event.preventDefault(); validateform();" method="post" name="form">
+    <h3 id="heading">Can you please provide your personal details</h3>
+    <div id="form-wrapper">
+
+      <h3>Name</h3>
+      <input type="text" name='name' id="input-box" placeholder="Please enter your name" required />
+      <br />
+      <h3>Date of birth</h3>
+      <input type="date" id='input-box' />
+      <br />
+      <h3>Contact</h3>
+      <input type="number" name='contact' placeholder="Please enter 10 digits" id="input-box" />
+      <br />
+      <h3>Country</h3>
+      <select id="country-options" class="select-box" onclick="fetch_country()" name="country" value="country"
+        required>Country
+      </select>
+      <br />
+      <h3>State</h3>
+      <select class="select-box" onclick="fetch_state()" id="state-options" required>State</select>
+      <br />
+      <h3> Email </h3>
+      <input type="email" placeholder="xyz@gmail.com" name='email' id="input-box" />
+      <br />
+      <br />
+      <input type="submit" value="Submit" />
+    </div>
+  </form>
+</body>
+
+</html>

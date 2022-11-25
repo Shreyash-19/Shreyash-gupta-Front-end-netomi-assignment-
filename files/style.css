@@ -1,0 +1,43 @@
+#iframe-border-align {
+    border: 3px solid rgb(239, 21, 14);
+    background-color: rgb(228, 215, 215);
+}
+
+#window-border {
+    border: 3px solid green;
+    max-width: none !important;
+}
+
+#result-div {
+    display: flex;
+    justify-content: center
+}
+
+#iframe-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+#heading {
+    margin-left: 40px !important;
+}
+
+#form-wrapper {
+    display: flex-box;
+    margin-left: 80px;
+
+}
+
+#input-box {
+    width: 45vw;
+    height: 20px
+}
+
+.select-box {
+
+    width: 46vw;
+    height: 20px !important;
+
+}
